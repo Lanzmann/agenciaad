@@ -1,12 +1,25 @@
 body{
     background-color: #111;
+    margin: 0px 100px;
 }
 
 .logo {
 
-  height: 50px;
-  margin: 30px 30px;
+  height: 10px;
+  margin: 10px 40px;
+  padding: 10px;
+}
+.logom{
   
+  display: flex;
+  height:auto;
+  width: auto;
+  background-image: url(/ad12.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  margin: 30px 30px;
 }
 
 .final {
@@ -70,7 +83,7 @@ body{
 
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content:space-around;
 
 
 
@@ -149,13 +162,20 @@ justify-content: space-between;
   /* margin: 40px 20px;
   gap: 4px; */
   align-self: center;
-  padding: 25px;
+  padding: 20px;
   text-transform: uppercase;
 
 
 
 }
 
+ul{
+  list-style: none;
+  overflow: hidden;  
+}
+li{
+  float:left;
+}
 .socialNav{
 
   display: inline;
@@ -192,18 +212,29 @@ justify-content: space-between;
 
 }
 
+nav{
+  display: flex;
+
+}
+
 nav a{
   text-decoration: none;
   color: white;
-  font-size: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin: 2.5px;
-  padding: 30px;
+  padding: 20px;
   border-width: 2px;
-  border-style: solid;
-  border-color:#111;
+  border-style:none;
+  display: inline-block;
+
 }
 nav a:hover{
   border-color: white;
+  background-color: white;
+  color: #111;
+
+  transition: 0.4s;
 
 }
 
